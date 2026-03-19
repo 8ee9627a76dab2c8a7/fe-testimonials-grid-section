@@ -38,6 +38,18 @@ body {
   min-height: 100vh;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 @media (min-width: 48rem) {
   body {
     padding: var(--spacing-500) 3.75rem;
@@ -139,7 +151,6 @@ main {
 }
 
 .highlight-content {
-  width: 15.0625rem;
   margin: 0;
   font-size: 1.25rem;
   font-weight: 500;
@@ -148,7 +159,6 @@ main {
 
 blockquote {
   margin: 0;
-  width: 15.0625rem;
   font-size: 0.83rem;
   font-weight: 500;
   line-height: 140%;
@@ -166,6 +176,18 @@ blockquote {
 
 /* Section 1 - purple background */
 .section-1 { background: var(--purple-500); }
+
+@media (min-width: 48rem) {
+  .section-1 {
+    background: var(--purple-500) url('./images/bg-pattern-quotation.svg') no-repeat top right 5rem;
+  } 
+}
+
+@media (min-width: 64rem) {
+  .section-1 {
+    background: var(--purple-500) url('./images/bg-pattern-quotation.svg') no-repeat top right 5rem;
+  } 
+}
 
 .section-1 .author-name,
 .section-1 .highlight-content { color: var(--white); }
